@@ -1,0 +1,1111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0AF6B0F8-0E71-4738-8DB1-1C2B56378AC9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LabERP.My.MyApplication</StartupObject>
+    <RootNamespace>LabERP</RootNamespace>
+    <AssemblyName>LabERP</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LabERP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LabERP.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>TMLCC.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms">
+      <HintPath>c:\program files (x86)\sap businessobjects\crystal reports for .net framework 4.0\common\sap businessobjects enterprise xi 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FontAwesome.Sharp, Version=5.15.4.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\packages\FontAwesome.Sharp.5.15.4\lib\net45\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="i00SpellCheck">
+      <HintPath>..\..\..\..\HistoCenter\i00_SpellCheck\i00SpellCheck\bin\Release\i00SpellCheck.exe</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\SubForm\frmLoginForm.designer.vb">
+      <DependentUpon>frmLoginForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubForm\frmLoginForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\SubForm\SplashScreen.designer.vb">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\SubForm\SplashScreen.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="Main\frmMainDashBoard.designer.vb">
+      <DependentUpon>frmMainDashBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmMainDashBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmOSDashBoard.designer.vb">
+      <DependentUpon>frmOSDashBoard.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmOSDashBoard.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\JustInTime\frmCulture.Designer.vb">
+      <DependentUpon>frmCulture.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\JustInTime\frmCulture.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\JustInTime\frmHistoComplate.Designer.vb">
+      <DependentUpon>frmHistoComplate.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\JustInTime\frmHistoComplate.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\JustInTime\frmPateintProfile.designer.vb">
+      <DependentUpon>frmPateintProfile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\JustInTime\frmPateintProfile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\JustInTime\frmCultureSetup.designer.vb">
+      <DependentUpon>frmCultureSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\JustInTime\frmCultureSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\CRHaemCanRep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRHaemCanRep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\CRHaematology.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRHaematology.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\CRHistoA4.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRHistoA4.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\CRHistomini.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRHistomini.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\CRProfiles.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRProfiles.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\Culture.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Culture.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\FrmReport.Designer.vb">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Reports\FrmReport.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\ProfileList.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ProfileList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\FrmReportCenter.Designer.vb">
+      <DependentUpon>FrmReportCenter.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\Reports\FrmReportCenter.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\Reports\Result.vb">
+      <DependentUpon>Result.rpt</DependentUpon>
+      <SubType>Component</SubType>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Main\Reports\StatisticRep.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>StatisticRep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Main\SubForms\FrmCanregsetup.Designer.vb">
+      <DependentUpon>FrmCanregsetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\SubForms\FrmCanregsetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\SubForms\FrmISI.Designer.vb">
+      <DependentUpon>FrmISI.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\SubForms\FrmISI.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\SubForms\frmProfilesSetup.designer.vb">
+      <DependentUpon>frmProfilesSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\SubForms\frmProfilesSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\SubForms\frmReg.designer.vb">
+      <DependentUpon>frmReg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\SubForms\frmReg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\SubForms\frmResultes.Designer.vb">
+      <DependentUpon>frmResultes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\SubForms\frmResultes.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\SubForms\UserControl\frmProfileSetup.designer.vb">
+      <DependentUpon>frmProfileSetup.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\SubForms\UserControl\frmProfileSetup.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\SubForms\UserControl\UCNewEmp.designer.vb">
+      <DependentUpon>UCNewEmp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Main\SubForms\UserControl\UCNewEmp.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Tools\CalendarColumn.vb" />
+    <Compile Include="Tools\Crypt.vb" />
+    <Compile Include="Tools\Digit2Character.vb" />
+    <Compile Include="Tools\FrmMessageBox.designer.vb">
+      <DependentUpon>FrmMessageBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\FrmMessageBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\frmProgressDialog.designer.vb">
+      <DependentUpon>frmProgressDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tools\frmProgressDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\frmStatus.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tools\modGlobal.vb" />
+    <Compile Include="Tools\modWIA.vb" />
+    <Compile Include="Tools\OperatorModule.vb" />
+    <Compile Include="Tools\RGBColors.vb" />
+    <Compile Include="Tools\TimeColumn.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Admin\SubForm\frmLoginForm.resx">
+      <DependentUpon>frmLoginForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\SubForm\SplashScreen.resx">
+      <DependentUpon>SplashScreen.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmMainDashBoard.resx">
+      <DependentUpon>frmMainDashBoard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmOSDashBoard.resx">
+      <DependentUpon>frmOSDashBoard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\JustInTime\frmCulture.resx">
+      <DependentUpon>frmCulture.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\JustInTime\frmHistoComplate.resx">
+      <DependentUpon>frmHistoComplate.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\JustInTime\frmPateintProfile.resx">
+      <DependentUpon>frmPateintProfile.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\JustInTime\frmCultureSetup.resx">
+      <DependentUpon>frmCultureSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\CRHaemCanRep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRHaemCanRep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\CRHaematology.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRHaematology.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\CRHistoA4.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRHistoA4.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\CRHistomini.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRHistomini.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\CRProfiles.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CRProfiles.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\Culture.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Culture.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\FrmReport.resx">
+      <DependentUpon>FrmReport.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\FrmReportCenter.resx">
+      <DependentUpon>FrmReportCenter.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\ProfileList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ProfileList.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\Result.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>Result.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\Reports\StatisticRep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>StatisticRep.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\SubForms\FrmCanregsetup.resx">
+      <DependentUpon>FrmCanregsetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\SubForms\FrmISI.resx">
+      <DependentUpon>FrmISI.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\SubForms\frmProfilesSetup.resx">
+      <DependentUpon>frmProfilesSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\SubForms\frmReg.resx">
+      <DependentUpon>frmReg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\SubForms\frmResultes.resx">
+      <DependentUpon>frmResultes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\SubForms\UserControl\frmProfileSetup.resx">
+      <DependentUpon>frmProfileSetup.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\SubForms\UserControl\UCNewEmp.resx">
+      <DependentUpon>UCNewEmp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\FrmMessageBox.resx">
+      <DependentUpon>FrmMessageBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\frmProgressDialog.resx">
+      <DependentUpon>frmProgressDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tools\frmStatus.resx">
+      <DependentUpon>frmStatus.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Resources\2++_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10++_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\542_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8552_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add patient SH_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add_000011.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\adlhcoix.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\advancedsettings_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Bagg%27s DiskDur_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Briefcase_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Blank-Green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Calculator_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\car-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cnrclient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download_00001_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Edit_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Falcon_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Find.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fonts_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gearsa_gm.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-new-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-new-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-address-book-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-address-book-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-authentication-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-change-user-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-change-user-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-change-user-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-bin-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-bin-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-bin-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-Driver-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-gas-station-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-address-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-home-address-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-window %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-minimize-window.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-name-tag-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-open-envelope-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paper-plane-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paper-plane-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-paper-plane-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-as-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-as-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-save-as-321.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-small-business-32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-small-business-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_button_minus_red_14768.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_cash_67190.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Citycons_fuel_1342947.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Close_1891023.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Close_green.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_contacts_2428675.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_dashboard_46791.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_gnome-panel-workspace-switcher_23929 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Info_132078.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_link-go_83876.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Massage_therapist_2_753939.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_note-edit_83969.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_Report_669954.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_save_60025.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_search_4103.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_search_173095.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_search_1730951.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_truck_50844.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\if_truck_transportation_65868.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Images Folder_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Interact.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\interact_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kdmconfig_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kfm.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kgevdcyr.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kghostview_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MainLogo-New.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My Documents_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Payment_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PaymentSmall.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PenBook_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Plus_00001_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer1_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Properties.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recycle Bin Full_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reports.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Scan image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scanner_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sidebar1080.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\stop-error_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tit1920.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-256_00001.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2tabs.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\115.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\116.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2014062704522058_easyicon_net_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add patient SH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\alert.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ans7_cardiacischemia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\application.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bioblue_kavel_divers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blood.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Blood-Drup.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\blue-flag.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Broaken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\broken.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cardiac.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CardiacArrest.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cardiac-rehab.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\card-machine.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\case.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cisco client 3D v2 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Colba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\comment_bubble.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer_monitor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_new_folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\create_new_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cxp 3D v2 .png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Default Icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\display.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\DrProfile1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\empty_sketchy.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Exit.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\factory.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\favorite.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\file-new.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\front.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\graffle.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\group.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Heard+.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\heart-murmur-diagram.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Hema.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\index.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Injection.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Kits1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 RTF File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LaST %28Cobalt%29 Text File.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\library.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\messenger 3D v2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Micro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multi_user_comment.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\OKShield.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_locked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\padlock_unlocked.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Pill3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pills2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pills3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pills4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pills5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\plaster.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Printer1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Refresh.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove tooth SH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Remove tooth.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Rich Text Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rss_feed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save-as.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\script-delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\send_email.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Setting1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Surgeon SH.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Surgeon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\symbol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Text Document.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\tool.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tourist guidebook.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash-full.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view_page.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_out.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom_search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ACP.png" />
+    <None Include="Resources\ALA.png" />
+    <None Include="Resources\AMH.png" />
+    <None Include="Resources\ANA.png" />
+    <None Include="Resources\ANAIgG%28ASMA%29%28LKM%29.png" />
+    <None Include="Resources\ANCA cp.png" />
+    <None Include="Resources\Anti Acetylcholine Ab.png" />
+    <None Include="Resources\Anti thrombin III.png" />
+    <None Include="Resources\Anti Thyroglobulin %28antiTG%29 &amp; Thyroid Peroxidase %28PTO%29.png" />
+    <None Include="Resources\APL-ACL.png" />
+    <None Include="Resources\BF.png" />
+    <None Include="Resources\BHCG.png" />
+    <None Include="Resources\Biochemistry.png" />
+    <None Include="Resources\Bullous Pemphigoid 180.png" />
+    <None Include="Resources\Bullous Pemphigoid 230.png" />
+    <None Include="Resources\C3.png" />
+    <None Include="Resources\C4.png" />
+    <None Include="Resources\CAGGTCor.png" />
+    <None Include="Resources\CardiacEnzyme.png" />
+    <None Include="Resources\CEA.png" />
+    <None Include="Resources\Coagulation Profile.png" />
+    <None Include="Resources\Coeliac screen.png" />
+    <None Include="Resources\Desmoglein 1.png" />
+    <None Include="Resources\Desmoglein 3.png" />
+    <None Include="Resources\Electro.png" />
+    <None Include="Resources\ExtraHormon.png" />
+    <None Include="Resources\Fertility1.png" />
+    <None Include="Resources\FertilityF2.png" />
+    <None Include="Resources\General.png" />
+    <None Include="Resources\GTT.png" />
+    <None Include="Resources\haematology.png" />
+    <None Include="Resources\HBV DNAHB eAGHB eAB.png" />
+    <None Include="Resources\Histopathology.png" />
+    <None Include="Resources\HIV RNA.png" />
+    <None Include="Resources\Hormone.png" />
+    <None Include="Resources\LFT-liverfunctiontest.png" />
+    <None Include="Resources\LipidProfile.png" />
+    <None Include="Resources\Protein C.png" />
+    <None Include="Resources\Protein S.png" />
+    <None Include="Resources\Semenanalysis.png" />
+    <None Include="Resources\Serology ELISA.png" />
+    <None Include="Resources\Serology.png" />
+    <None Include="Resources\SerumIron.png" />
+    <None Include="Resources\TFT.png" />
+    <None Include="Resources\Torch.png" />
+    <None Include="Resources\Toxo.png" />
+    <None Include="Resources\VitD.png" />
+    <None Include="Resources\Von wellibrand factor.png" />
+    <None Include="Resources\Xtra.png" />
+    <None Include="Resources\icons8-add-32.png" />
+    <None Include="Resources\icons8-add-48.png" />
+    <None Include="Resources\icons8-c-100.png" />
+    <None Include="Resources\icons8-delete-32.png" />
+    <None Include="Resources\icons8-l-100.png" />
+    <None Include="Resources\icons8-m-100.png" />
+    <None Include="Resources\icons8-registration-48.png" />
+    <None Include="Resources\icons8-registration-96.png" />
+    <None Include="Resources\icons8-save-32.png" />
+    <None Include="Resources\icons8-t-100.png" />
+    <None Include="Resources\icons8-test-32.png" />
+    <None Include="Resources\icons8-test-48.png" />
+    <None Include="Resources\icons8-update-32.png" />
+    <None Include="Resources\ResultEntry.png" />
+    <Content Include="Resources\JPG\ALA.jpg" />
+    <Content Include="Resources\JPG\AMH.jpg" />
+    <Content Include="Resources\JPG\ANA.jpg" />
+    <Content Include="Resources\JPG\ANAIgG%28ASMA%29%28LKM%29.jpg" />
+    <Content Include="Resources\JPG\ANCA cp.jpg" />
+    <Content Include="Resources\JPG\Anti Acetylcholine Ab.jpg" />
+    <Content Include="Resources\JPG\Anti thrombin III.jpg" />
+    <Content Include="Resources\JPG\Anti Thyroglobulin %28antiTG%29 &amp; Thyroid Peroxidase %28PTO%29.jpg" />
+    <Content Include="Resources\JPG\APL-ACL.jpg" />
+    <Content Include="Resources\JPG\BF.jpg" />
+    <Content Include="Resources\JPG\BHCG.jpg" />
+    <Content Include="Resources\JPG\Biochemistry.jpg" />
+    <Content Include="Resources\JPG\Bullous Pemphigoid 180.jpg" />
+    <Content Include="Resources\JPG\Bullous Pemphigoid 230.jpg" />
+    <Content Include="Resources\JPG\C3.jpg" />
+    <Content Include="Resources\JPG\C4.jpg" />
+    <Content Include="Resources\JPG\CAGGTCor.jpg" />
+    <Content Include="Resources\JPG\CardiacEnzyme.jpg" />
+    <Content Include="Resources\JPG\CEA.jpg" />
+    <Content Include="Resources\JPG\Coagulation Profile.jpg" />
+    <Content Include="Resources\JPG\Coeliac screen.jpg" />
+    <Content Include="Resources\JPG\Desmoglein 1.jpg" />
+    <Content Include="Resources\JPG\Desmoglein 3.jpg" />
+    <Content Include="Resources\JPG\Electro.jpg" />
+    <Content Include="Resources\JPG\ExtraHormon.jpg" />
+    <Content Include="Resources\JPG\Fertility1.jpg" />
+    <Content Include="Resources\JPG\FertilityF2.jpg" />
+    <Content Include="Resources\JPG\General.jpg" />
+    <Content Include="Resources\JPG\GTT.jpg" />
+    <Content Include="Resources\JPG\haematology.jpg" />
+    <Content Include="Resources\JPG\Histopathology.jpg" />
+    <Content Include="Resources\JPG\HIV RNA.jpg" />
+    <Content Include="Resources\JPG\Hormone.jpg" />
+    <Content Include="Resources\JPG\LFT-liverfunctiontest.jpg" />
+    <Content Include="Resources\JPG\LipidProfile.jpg" />
+    <Content Include="Resources\JPG\Protein C.jpg" />
+    <Content Include="Resources\JPG\Protein S.jpg" />
+    <Content Include="Resources\JPG\Semenanalysis.jpg" />
+    <Content Include="Resources\JPG\Serology ELISA.jpg" />
+    <Content Include="Resources\JPG\Serology.jpg" />
+    <Content Include="Resources\JPG\SerumIron.jpg" />
+    <Content Include="Resources\JPG\TFT.jpg" />
+    <Content Include="TMLCC.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
